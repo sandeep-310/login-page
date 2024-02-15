@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(bg.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.mainBox {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  height: 540px;
+  width: 700px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px white;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+.inputForm {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  top: 180px;
+}
+.inputBox {
+  margin: 15px 0;
+}
+.inputBox label {
+  pointer-events: none;
+  position: relative;
+  top: -25px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.inputBox input {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: white;
+  border-bottom: 2px solid #fff;
+  padding: 0px 20px 0px 5px;
+}
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+  font-size: 17px;
+  top: -43px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+.forgottenDiv {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: #fff;
+  border: 2px solid white;
+  outline: none;
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+}
+.btn:hover {
+  background-color: transparent;
+  color: white;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+#loginHead {
+  color: #fff;
+  position: absolute;
+  top: 70px;
+}
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 20px;
+  border-radius: 20px 20px 0px 20px;
+}
+.subLoginDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #164760cd;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  border-left: 2px solid white;
+  border-radius: 180px 20px 20px 180px;
+  transition: 0.5s ease;
+  width: 50%;
+}
+.magicAnimation {
+  position: absolute;
+  left: 0;
+  border-right: 2px solid white;
+  border-radius: 20px 180px 180px 20px;
+}
+.SignupDiv {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.SignupDiv h1 {
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+.SignupDiv .inputForm {
+  width: 80%;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+.SignupDiv .btn {
+  top: -15px;
+}
+.magicBtndiv{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 324px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.magicBtn {
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid white;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.magicBtn:hover {
+  background-color: #164760cd;
+  transition: 0.2s ease;
+  color: white;
+}
+.subLoginDiv h1 {
+  color: white;
+  position: absolute;
+  top: 186px;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+.welcome-back {
+  height: 40%;
+  width: 100%;
+}
+.welcome {
+  height: 40%;
+  width: 100%;
+}
+.welcome .welcome-quote {
+  width: 100%;
+  text-align: center;
+}
+.welcome .Link {
+  width: 100%;
+  text-align: center;
+  top: 290px;
+}
+.welcome-quote {
+  color: white;
+  position: absolute;
+  top: 250px;
+  right: 2px;
+  width: 85%;
+}
+.Link {
+  color: white;
+  position: absolute;
+  top: 305px;
+  right: 0;
+  width: 73%;
+}
+.toggleClass {
+  display: none;
+  transition: 1s ease;
+}
+@media screen and (max-width: 769px) {
+  .mainBox{
+    width: 87%;
+  }
+  .subLoginDiv h1 {
+    top: 128px;
+    left: 2px;
+    font-size: 38px;
+  }
+  .welcome-quote{
+    width: 84%;
+    top: 210px;
+  }
+  .subLoginDiv {
+    border-radius: 200px 20px 20px 200px;
+  }
+  .magicAnimation {
+    border-radius: 20px 200px 200px 20px;
+  }
+  .forgottenDiv {
+    flex-direction: column;
+    position: relative;
+    left: 5px;
+  }
+  .forgottenDiv label {
+    position: absolute;
+    margin: 30px 0;
+  }
+  .SignupDiv {
+    width: 54%;
+  }
+  .SignupDiv h1 {
+    font-size: 30px;
+    left: 5px;
+    top: 78px;
+  }
+  .Link {
+    top: 270px;
+    width: 100%;
+    text-align: center;
+  }
+  .magicBtndiv {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (max-width: 470px) {
+  .mainBox {
+    width: 80%;
+  }
+  .welcome-quote{
+    display: none;
+  }
+  .subLoginDiv {
+    background: none;
+    border: none;
+    width: 100%;
+    left: 0;
+  }
+  .subLoginDiv h1 {
+    display: none;
+    position: absolute;
+  }
+  .inputForm {
+    width: 80%;
+    z-index: 100;
+  }
+  .loginDiv {
+    width: 100%;
+  }
+  .forgottenDiv {
+    top: -16px;
+  }
+  .Link {
+    top: 427px;
+    width: 100%;
+    text-align: center;
+  }
+  .magicBtndiv{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 443px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .magicBtn {
+    top: 12px;
+  }
+  .SignupDiv {
+    width: 100%;
+    left: 0;
+  }
+  .welcome .Link{
+    top: 428px;
+  }
+  .SignupDiv h1 {
+    top: 70px;
+    text-align: center;
+    width: 100%;
+  }
+  .SignupDiv .btn {
+    top: -30px;
+  }
+  .welcome .magicBtn{
+    z-index: 200;
+  }
+}
