@@ -8,6 +8,5 @@ buttonArray.forEach(element => {
         document.getElementsByClassName("subLoginDiv")[0].classList.toggle("magicAnimation")
         document.getElementsByClassName("welcome-back")[0].classList.toggle("toggleClass");
         document.getElementsByClassName("welcome")[0].classList.toggle("toggleClass");
-        console.log(e);
     })
 });
